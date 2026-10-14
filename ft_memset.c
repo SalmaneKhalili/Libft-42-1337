@@ -6,12 +6,13 @@
 /*   By: salkhali <salkhali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:02:03 by salkhali          #+#    #+#             */
-/*   Updated: 2026/10/13 17:02:05 by salkhali         ###   ########.fr       */
+/*   Updated: 2026/10/14 07:53:58 by salkhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
+//#include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
