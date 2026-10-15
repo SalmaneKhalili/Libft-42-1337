@@ -23,18 +23,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	*dst = '\0';
 	return (len);
 }
-/*
-int	main(void)
-{
-	char	*test;
-	char	arr[3];
-
-	test = "literal";
-	ft_strlcpy(arr, test, 3);
-	printf("test == %s, arr == %s, result = %s \n", test, arr, ((strcmp(test,
-					arr) == 0) ? "True" : "False"));
-}
-*/
 
 /*
 #include <stdio.h>
