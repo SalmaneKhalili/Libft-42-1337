@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
@@ -21,3 +23,27 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	const char	*s;
+	int			c;
+	int			ok;
+
+	s = "hello world";
+	ok = 1;
+	c = 0;
+	while (c <= 255)
+	{
+		if (ft_strchr(s, c) != strchr(s, c))
+			ok = 0;
+		c++;
+	}
+	printf("strchr: %s\n", ok ? "PASS" : "FAIL");
+	return (0);
+}
+*/

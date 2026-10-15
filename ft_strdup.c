@@ -23,3 +23,35 @@ char	*ft_strdup(const char *s)
 	ft_strlcpy(dup, s, s_len + 1);
 	return (dup);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	const char	*tests[] = {"", "a", "hello world"};
+	char		*mine;
+	char		*std;
+	size_t		n;
+	size_t		i;
+	int			ok;
+
+	n = sizeof(tests) / sizeof(tests[0]);
+	ok = 1;
+	i = 0;
+	while (i < n)
+	{
+		mine = ft_strdup(tests[i]);
+		std = strdup(tests[i]);
+		if (mine == NULL || std == NULL || strcmp(mine, std) != 0)
+			ok = 0;
+		free(mine);
+		free(std);
+		i++;
+	}
+	printf("strdup: %s\n", ok ? "PASS" : "FAIL");
+	return (0);
+}
+*/

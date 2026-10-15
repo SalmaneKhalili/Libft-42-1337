@@ -32,3 +32,43 @@ void	*ft_memmove(void *s1, const void *s2, size_t n)
 	}
 	return (s1);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	unsigned char	a[16];
+	unsigned char	b[16];
+	size_t			n;
+	size_t			off;
+	int				ok;
+
+	ok = 1;
+	n = 0;
+	while (n <= 8)
+	{
+		off = 0;
+		while (off <= 8)
+		{
+			memcpy(a, "abcdefghijklmnop", 16);
+			memcpy(b, "abcdefghijklmnop", 16);
+			if (ft_memmove(a + off, a, n) != a + off
+				|| memmove(b + off, b, n) != b + off
+				|| memcmp(a, b, 16) != 0)
+				ok = 0;
+			memcpy(a, "abcdefghijklmnop", 16);
+			memcpy(b, "abcdefghijklmnop", 16);
+			if (ft_memmove(a, a + off, n) != a
+				|| memmove(b, b + off, n) != b
+				|| memcmp(a, b, 16) != 0)
+				ok = 0;
+			off++;
+		}
+		n++;
+	}
+	printf("memmove: %s\n", ok ? "PASS" : "FAIL");
+	return (0);
+}
+*/

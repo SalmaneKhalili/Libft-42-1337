@@ -10,7 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isprint(int c)
 {
 	return (c >= ' ' && c <= '~');
 }
+
+/*
+#include <stdio.h>
+#include <ctype.h>
+
+int	main(void)
+{
+	int	c;
+	int	ok;
+
+	ok = 1;
+	c = -1;
+	while (c <= 255)
+	{
+		if ((ft_isprint(c) != 0) != (isprint(c) != 0))
+			ok = 0;
+		c++;
+	}
+	printf("isprint: %s\n", ok ? "PASS" : "FAIL");
+	return (0);
+}
+*/

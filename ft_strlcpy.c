@@ -35,3 +35,33 @@ int	main(void)
 					arr) == 0) ? "True" : "False"));
 }
 */
+
+/*
+#include <stdio.h>
+#include <bsd/string.h>
+
+int	main(void)
+{
+	char			dst1[16];
+	char			dst2[16];
+	const char		*src;
+	size_t			n;
+	int				ok;
+
+	src = "hello world";
+	ok = 1;
+	n = 0;
+	while (n <= 16)
+	{
+		memset(dst1, 'x', 16);
+		memset(dst2, 'x', 16);
+		if (ft_strlcpy(dst1, src, n) != strlcpy(dst2, src, n))
+			ok = 0;
+		if (memcmp(dst1, dst2, 16) != 0)
+			ok = 0;
+		n++;
+	}
+	printf("strlcpy: %s\n", ok ? "PASS" : "FAIL");
+	return (0);
+}
+*/

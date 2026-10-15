@@ -30,3 +30,36 @@ size_t	ft_strlcat(char *dst, char const *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+#include <bsd/string.h>
+
+int	main(void)
+{
+	char		dst1[32];
+	char		dst2[32];
+	const char	*src;
+	const char	*init;
+	size_t		n;
+	int			ok;
+
+	src = "world";
+	init = "hello";
+	ok = 1;
+	n = 0;
+	while (n <= 32)
+	{
+		strncpy(dst1, init, 32);
+		strncpy(dst2, init, 32);
+		if (ft_strlcat(dst1, src, n) != strlcat(dst2, src, n))
+			ok = 0;
+		if (memcmp(dst1, dst2, 32) != 0)
+			ok = 0;
+		n++;
+	}
+	printf("strlcat: %s\n", ok ? "PASS" : "FAIL");
+	return (0);
+}
+*/

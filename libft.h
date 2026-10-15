@@ -6,7 +6,7 @@
 /*   By: salkhali <salkhali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:41:30 by salkhali          #+#    #+#             */
-/*   Updated: 2026/10/15 08:48:47 by salkhali         ###   ########.fr       */
+/*   Updated: 2026/10/15 10:55:40 by salkhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isascii(int c);
@@ -33,4 +34,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_atoi(const char *str);
+void	*ft_calloc(size_t nelem, size_t elsize);
+char	*ft_strdup(const char *s);
 #endif
