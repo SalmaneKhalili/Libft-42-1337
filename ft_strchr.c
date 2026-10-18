@@ -6,7 +6,7 @@
 /*   By: salkhali <salkhali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:11:21 by salkhali          #+#    #+#             */
-/*   Updated: 2026/10/14 15:16:47 by salkhali         ###   ########.fr       */
+/*   Updated: 2026/10/17 16:13:46 by salkhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (c == '\0')
 		return ((char *)s);
-	return (0);
+	return ((void *)0);
 }
 
 /*
