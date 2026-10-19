@@ -11,16 +11,13 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
-so:
-	gcc -nostartfiles -shared -o libft.so $(OBJS) -lbsd
-
 %.o: %.c $(INCLUDE)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
 fclean: clean 
-	rm -f $(NAME) libft.so
+	rm -f $(NAME) 
 
 re: fclean all 
 
