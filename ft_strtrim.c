@@ -6,7 +6,7 @@
 /*   By: salkhali <salkhali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 15:16:35 by salkhali          #+#    #+#             */
-/*   Updated: 2026/10/17 15:44:13 by salkhali         ###   ########.fr       */
+/*   Updated: 2026/10/20 08:59:31 by salkhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ copy of ’s1’ with characters from ’set’ removed
 from the beginning and the end.
  */
 #include "libft.h"
-#include <unistd.h>
 
 static size_t	ft_in_set(char const *set, char c)
 {
