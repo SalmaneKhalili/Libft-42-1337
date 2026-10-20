@@ -6,7 +6,7 @@
 /*   By: salkhali <salkhali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 13:14:18 by salkhali          #+#    #+#             */
-/*   Updated: 2026/10/18 13:39:41 by salkhali         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:32:46 by salkhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*node;
 
-	if (lst == NULL)
+	if (lst == NULL || new == NULL)
 		return ;
 	if (*lst == NULL)
 	{

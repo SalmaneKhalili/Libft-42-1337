@@ -53,7 +53,7 @@ Part 2
 </p>
 
 <h3 align=center>
-Bonus
+Part 3
 </h3>
 
 > <i>The following functions will allow you to easily use your lists.</i>
