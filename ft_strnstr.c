@@ -6,7 +6,7 @@
 /*   By: salkhali <salkhali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 08:49:20 by salkhali          #+#    #+#             */
-/*   Updated: 2026/10/17 08:54:01 by salkhali         ###   ########.fr       */
+/*   Updated: 2026/10/20 09:14:05 by salkhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,29 +28,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-//
-// #include <bsd/string.h>
-// #include <stdio.h>
-//
-// int	main(void)
-// {
-// 	const char	*bigs[] = {"abc", "abcd", "hello world", "aaab", "abcd", "",
-// 			NULL};
-// 	const char	*littles[] = {"bc", "cd", "world", "ab", "cd", "x", "fake"};
-// 	size_t		lens[] = {3, 3, 11, 3, 4, 1, 3};
-// 	size_t		i;
-// 	char		*mine;
-// 	char		*std;
-//
-// 	i = 0;
-// 	while (i < sizeof(bigs) / sizeof(bigs[0]))
-// 	{
-// 		mine = ft_strnstr(bigs[i], littles[i], lens[i]);
-// 		std = strnstr(bigs[i], littles[i], lens[i]);
-// 		printf("big=%-12s little=%-6s len=%zu | ft=%-6s std=%-6s | %s\n",
-// 			bigs[i], littles[i], lens[i], mine ? mine : "(null)",
-// 			std ? std : "(null)", mine == std ? "PASS" : "FAIL");
-// 		i++;
-// 	}
-// 	return (0);
-// }
